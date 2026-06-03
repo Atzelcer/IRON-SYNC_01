@@ -1,0 +1,15 @@
+{
+  "schema": "ironsync.imus_ven.kalman.v1",
+  "dim": 2,
+  "regimes": {
+    "rest": {
+      "process_var": 0.0005,
+      "measure_var": 0.08
+    },
+    "gesture": {
+      "process_var": 0.003,
+      "measure_var": 0.025
+    }
+  },
+  "default_regime": "gesture"
+}

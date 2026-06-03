@@ -1,0 +1,71 @@
+# Entornos y dependencias locales
+.venv/
+venv/
+env/
+ironsync_env/
+cuadernillos/ironsync_env/
+node_modules/
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+
+# Secretos y configuración local
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+secrets/
+
+# Jupyter y caches
+.ipynb_checkpoints/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Artefactos de entrenamiento y modelos pesados
+*.pt
+*.pth
+*.onnx
+*.npy
+*.npz
+*.h5
+*.pkl
+*.ckpt
+*.safetensors
+
+# Datasets generados (regenerar con scripts/dataset/)
+dataset/**
+!dataset/.gitkeep
+IA-IRON-SYNC/**/dataset/
+IA-IRON-SYNC/**/datasets/
+IA-IRON-SYNC/**/checkpoints/
+IA-IRON-SYNC/**/model/
+
+# Colecciones de sesión y inspección Unreal local
+artifacts/colecciones/
+artifacts/unreal_inspect/
+arduino_review/
+
+# Sistema/editor
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/settings.json
+
+# Logs, builds y salidas temporales
+*.log
+outputs/
+runs/
+tmp/
+tmp_*/
+dist/
+dev-server.log
+dev-server.err.log
+
+# Cuadernillos: notebooks de trabajo con salidas pesadas (código en IA-IRON-SYNC/)
+cuadernillos/

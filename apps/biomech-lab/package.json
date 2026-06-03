@@ -1,0 +1,19 @@
+{
+  "name": "@ironsync/biomech-lab",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Laboratorio HTML5 de entrenamiento biomecanico para IRON-SYNC.",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 5173 --strictPort",
+    "dev:hardware": "vite --host 0.0.0.0 --port 5173 --strictPort",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 4173"
+  },
+  "dependencies": {
+    "@vitejs/plugin-basic-ssl": "^2.1.0",
+    "three": "^0.170.0",
+    "vite": "^6.0.0"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,5 @@
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}/cuadernillos/ironsync_env/Scripts/python.exe",
+  "notebook.defaultKernel": "ironsync",
+  "git.ignoreLimitWarning": true
+}

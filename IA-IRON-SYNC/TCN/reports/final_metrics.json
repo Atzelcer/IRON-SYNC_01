@@ -1,0 +1,29 @@
+{
+  "validation": {
+    "mae_deg": 0.362756609916687,
+    "mae_noisy_deg": 1.1716505289077759,
+    "frame_accuracy_pct": 99.07450419867786,
+    "reconstruction_score_pct": 36.237023846530604,
+    "improvement_vs_noisy_pct": 69.0388389822402,
+    "jitter_pred": 0.02708677388727665,
+    "jitter_clean": 0.6088812351226807,
+    "spike_rate_pred": 0.0,
+    "spike_rate_noisy": 0.0006830140485312899,
+    "energy_ratio": 0.1286623626947403,
+    "passes_95_precision": 1.0
+  },
+  "test": {
+    "mae_deg": 0.3585551381111145,
+    "mae_noisy_deg": 1.1890621185302734,
+    "frame_accuracy_pct": 99.08217308217309,
+    "reconstruction_score_pct": 36.754020541968956,
+    "improvement_vs_noisy_pct": 69.84555058075034,
+    "jitter_pred": 0.02740585245192051,
+    "jitter_clean": 0.6016956567764282,
+    "spike_rate_pred": 0.0,
+    "spike_rate_noisy": 0.0006150702426564495,
+    "energy_ratio": 0.12980294227600098,
+    "passes_95_precision": 1.0
+  },
+  "checkpoint_approved_95": true
+}

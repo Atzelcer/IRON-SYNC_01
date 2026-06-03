@@ -1,0 +1,20 @@
+{
+  "modelo": "models\\BEST_PPO.pt",
+  "rollouts_entrenamiento": 94,
+  "pasos_globales": 96256,
+  "inferencia_final_pct": 79.1,
+  "recompensa_final": -38.2,
+  "evolucion": {
+    "inferencia_inicio_pct": 54.1,
+    "inferencia_final_pct": 79.1,
+    "recompensa_inicio": -84.81,
+    "recompensa_final": -38.2
+  },
+  "archivos": [
+    "reports/BEST_PPO/training_metrics.json",
+    "reports/BEST_PPO/training_curves.png",
+    "reports/BEST_PPO/evolucion_inferencia.png",
+    "reports/BEST_PPO/inferencia_evolucion.png",
+    "reports/BEST_PPO/inference_summary.json"
+  ]
+}

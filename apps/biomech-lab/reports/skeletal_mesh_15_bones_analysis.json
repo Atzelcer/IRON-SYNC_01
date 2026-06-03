@@ -1,0 +1,940 @@
+{
+  "bind": {
+    "hip": {
+      "ueBone": "Hips",
+      "localEulerDeg": {
+        "rx": 90,
+        "ry": 0,
+        "rz": 0,
+        "order": "XYZ"
+      },
+      "localPos": {
+        "x": -0.112,
+        "y": -2.703,
+        "z": 37.695
+      },
+      "worldPos": {
+        "x": -0.007,
+        "y": 1.221,
+        "z": 0.021
+      }
+    },
+    "chest": {
+      "ueBone": "Spine2",
+      "localEulerDeg": {
+        "rx": 0,
+        "ry": 0,
+        "rz": 0,
+        "order": "XYZ"
+      },
+      "localPos": {
+        "x": 0,
+        "y": 4.915,
+        "z": 0
+      },
+      "worldPos": {
+        "x": -0.007,
+        "y": 1.634,
+        "z": -0.032
+      }
+    },
+    "head": {
+      "ueBone": "Head",
+      "localEulerDeg": {
+        "rx": 0,
+        "ry": 0,
+        "rz": 0,
+        "order": "XYZ"
+      },
+      "localPos": {
+        "x": 0,
+        "y": 2.045,
+        "z": 0.769
+      },
+      "worldPos": {
+        "x": -0.007,
+        "y": 1.877,
+        "z": -0.03
+      }
+    },
+    "sL": {
+      "ueBone": "LeftArm",
+      "localEulerDeg": {
+        "rx": 38.155,
+        "ry": 7.218,
+        "rz": -5.638,
+        "order": "XYZ"
+      },
+      "localPos": {
+        "x": 0,
+        "y": 5.465,
+        "z": 0
+      },
+      "worldPos": {
+        "x": 0.238,
+        "y": 1.716,
+        "z": -0.054
+      }
+    },
+    "fL": {
+      "ueBone": "LeftForeArm",
+      "localEulerDeg": {
+        "rx": 1.776,
+        "ry": 0.524,
+        "rz": 16.423,
+        "order": "XYZ"
+      },
+      "localPos": {
+        "x": 0,
+        "y": 9.194,
+        "z": 0
+      },
+      "worldPos": {
+        "x": 0.391,
+        "y": 1.461,
+        "z": -0.057
+      }
+    },
+    "hL": {
+      "ueBone": "LeftHand",
+      "localEulerDeg": {
+        "rx": 5.985,
+        "ry": -2.865,
+        "rz": 0.402,
+        "order": "XYZ"
+      },
+      "localPos": {
+        "x": 0,
+        "y": 8.886,
+        "z": 0
+      },
+      "worldPos": {
+        "x": 0.523,
+        "y": 1.219,
+        "z": 0.02
+      }
+    },
+    "sR": {
+      "ueBone": "RightArm",
+      "localEulerDeg": {
+        "rx": 38.334,
+        "ry": -8.622,
+        "rz": 6.761,
+        "order": "XYZ"
+      },
+      "localPos": {
+        "x": 0,
+        "y": 5.465,
+        "z": 0
+      },
+      "worldPos": {
+        "x": -0.253,
+        "y": 1.716,
+        "z": -0.055
+      }
+    },
+    "fR": {
+      "ueBone": "RightForeArm",
+      "localEulerDeg": {
+        "rx": 1.488,
+        "ry": -0.449,
+        "rz": -16.778,
+        "order": "XYZ"
+      },
+      "localPos": {
+        "x": 0,
+        "y": 9.199,
+        "z": 0
+      },
+      "worldPos": {
+        "x": -0.405,
+        "y": 1.461,
+        "z": -0.066
+      }
+    },
+    "hR": {
+      "ueBone": "RightHand",
+      "localEulerDeg": {
+        "rx": 10.042,
+        "ry": 2.997,
+        "rz": 0.275,
+        "order": "XYZ"
+      },
+      "localPos": {
+        "x": 0,
+        "y": 8.844,
+        "z": 0
+      },
+      "worldPos": {
+        "x": -0.538,
+        "y": 1.219,
+        "z": 0.006
+      }
+    },
+    "tL": {
+      "ueBone": "LeftUpLeg",
+      "localEulerDeg": {
+        "rx": 3.372,
+        "ry": 0,
+        "rz": -176.838,
+        "order": "XYZ"
+      },
+      "localPos": {
+        "x": 3.524,
+        "y": -2.074,
+        "z": -0.024
+      },
+      "worldPos": {
+        "x": 0.106,
+        "y": 1.154,
+        "z": 0.02
+      }
+    },
+    "knL": {
+      "ueBone": "LeftLeg",
+      "localEulerDeg": {
+        "rx": -2.562,
+        "ry": 0.082,
+        "rz": -1.836,
+        "order": "XYZ"
+      },
+      "localPos": {
+        "x": 0,
+        "y": 16.421,
+        "z": 0
+      },
+      "worldPos": {
+        "x": 0.136,
+        "y": 0.625,
+        "z": -0.011
+      }
+    },
+    "ftL": {
+      "ueBone": "LeftFoot",
+      "localEulerDeg": {
+        "rx": 58.545,
+        "ry": -0.782,
+        "rz": 1.278,
+        "order": "XYZ"
+      },
+      "localPos": {
+        "x": 0,
+        "y": 14.941,
+        "z": 0
+      },
+      "worldPos": {
+        "x": 0.147,
+        "y": 0.145,
+        "z": -0.061
+      }
+    },
+    "tR": {
+      "ueBone": "RightUpLeg",
+      "localEulerDeg": {
+        "rx": 3.747,
+        "ry": 0,
+        "rz": 176.839,
+        "order": "XYZ"
+      },
+      "localPos": {
+        "x": -3.524,
+        "y": -2.074,
+        "z": -0.036
+      },
+      "worldPos": {
+        "x": -0.121,
+        "y": 1.154,
+        "z": 0.02
+      }
+    },
+    "knR": {
+      "ueBone": "RightLeg",
+      "localEulerDeg": {
+        "rx": -1.448,
+        "ry": -0.046,
+        "rz": 1.836,
+        "order": "XYZ"
+      },
+      "localPos": {
+        "x": 0,
+        "y": 16.427,
+        "z": 0
+      },
+      "worldPos": {
+        "x": -0.15,
+        "y": 0.625,
+        "z": -0.015
+      }
+    },
+    "ftR": {
+      "ueBone": "RightFoot",
+      "localEulerDeg": {
+        "rx": 57.641,
+        "ry": 0.817,
+        "rz": -1.289,
+        "order": "XYZ"
+      },
+      "localPos": {
+        "x": 0,
+        "y": 14.922,
+        "z": 0
+      },
+      "worldPos": {
+        "x": -0.162,
+        "y": 0.145,
+        "z": -0.058
+      }
+    }
+  },
+  "unrealInitialApplied": {
+    "hip": {
+      "localEulerAbsDeg": {
+        "rx": 90,
+        "ry": 0,
+        "rz": 80,
+        "order": "XYZ"
+      },
+      "worldPos": {
+        "x": -0.007,
+        "y": 1.221,
+        "z": 0.021
+      }
+    },
+    "chest": {
+      "localEulerAbsDeg": {
+        "rx": 82.718,
+        "ry": 0,
+        "rz": 80,
+        "order": "XYZ"
+      },
+      "worldPos": {
+        "x": -0.414,
+        "y": 1.292,
+        "z": -0.032
+      }
+    },
+    "head": {
+      "localEulerAbsDeg": {
+        "rx": 90,
+        "ry": 0,
+        "rz": 80,
+        "order": "XYZ"
+      },
+      "worldPos": {
+        "x": -0.434,
+        "y": 1.055,
+        "z": 0.017
+      }
+    },
+    "sL": {
+      "localEulerAbsDeg": {
+        "rx": -120.969,
+        "ry": 1.241,
+        "rz": -9.302,
+        "order": "XYZ"
+      },
+      "worldPos": {
+        "x": -0.495,
+        "y": 1.266,
+        "z": 0.213
+      }
+    },
+    "fL": {
+      "localEulerAbsDeg": {
+        "rx": -119.992,
+        "ry": -12.809,
+        "rz": -0.717,
+        "order": "XYZ"
+      },
+      "worldPos": {
+        "x": -0.589,
+        "y": 0.985,
+        "z": 0.199
+      }
+    },
+    "hL": {
+      "localEulerAbsDeg": {
+        "rx": -113.423,
+        "ry": -14.33,
+        "rz": -3.249,
+        "order": "XYZ"
+      },
+      "worldPos": {
+        "x": -0.47,
+        "y": 1.107,
+        "z": -0.031
+      }
+    },
+    "sR": {
+      "localEulerAbsDeg": {
+        "rx": -120.921,
+        "ry": -2.91,
+        "rz": 169.085,
+        "order": "XYZ"
+      },
+      "worldPos": {
+        "x": -0.392,
+        "y": 1.161,
+        "z": -0.255
+      }
+    },
+    "fR": {
+      "localEulerAbsDeg": {
+        "rx": -120.023,
+        "ry": 11.467,
+        "rz": 160.377,
+        "order": "XYZ"
+      },
+      "worldPos": {
+        "x": -0.377,
+        "y": 1.439,
+        "z": -0.36
+      }
+    },
+    "hR": {
+      "localEulerAbsDeg": {
+        "rx": -109.363,
+        "ry": 12.217,
+        "rz": 163.355,
+        "order": "XYZ"
+      },
+      "worldPos": {
+        "x": -0.259,
+        "y": 1.498,
+        "z": -0.613
+      }
+    },
+    "tL": {
+      "localEulerAbsDeg": {
+        "rx": -93.377,
+        "ry": -3.157,
+        "rz": -99.814,
+        "order": "XYZ"
+      },
+      "worldPos": {
+        "x": 0.078,
+        "y": 1.321,
+        "z": 0.02
+      }
+    },
+    "knL": {
+      "localEulerAbsDeg": {
+        "rx": -95.936,
+        "ry": -1.322,
+        "rz": -99.922,
+        "order": "XYZ"
+      },
+      "worldPos": {
+        "x": 0.135,
+        "y": 1.841,
+        "z": 0.109
+      }
+    },
+    "ftL": {
+      "localEulerAbsDeg": {
+        "rx": -37.363,
+        "ry": -1.476,
+        "rz": -101.413,
+        "order": "XYZ"
+      },
+      "worldPos": {
+        "x": 0.02,
+        "y": 1.794,
+        "z": 0.575
+      }
+    },
+    "tR": {
+      "localEulerAbsDeg": {
+        "rx": -93.752,
+        "ry": 3.154,
+        "rz": -100.207,
+        "order": "XYZ"
+      },
+      "worldPos": {
+        "x": 0.039,
+        "y": 1.097,
+        "z": 0.02
+      }
+    },
+    "knR": {
+      "localEulerAbsDeg": {
+        "rx": -95.196,
+        "ry": 1.322,
+        "rz": -100.087,
+        "order": "XYZ"
+      },
+      "worldPos": {
+        "x": 0.152,
+        "y": 1.606,
+        "z": 0.116
+      }
+    },
+    "ftR": {
+      "localEulerAbsDeg": {
+        "rx": -37.527,
+        "ry": 1.46,
+        "rz": -98.566,
+        "order": "XYZ"
+      },
+      "worldPos": {
+        "x": 0.019,
+        "y": 1.546,
+        "z": 0.575
+      }
+    }
+  },
+  "readAfterUnreal": {
+    "hip": {
+      "readDeltaDeg": {
+        "rx": 0.000009659346310548665,
+        "ry": 0,
+        "rz": 80
+      },
+      "readUnreal": {
+        "frotator": {
+          "rx": 90,
+          "ry": 0,
+          "rz": 80
+        },
+        "fvector": {
+          "x": -2.681,
+          "y": 0.359,
+          "z": 39.345
+        }
+      }
+    },
+    "chest": {
+      "readDeltaDeg": {
+        "rx": 82.718,
+        "ry": 0,
+        "rz": 80
+      },
+      "readUnreal": {
+        "frotator": {
+          "rx": 82.718,
+          "ry": 0,
+          "rz": 80
+        },
+        "fvector": {
+          "x": -1.07,
+          "y": 0.075,
+          "z": 52.143
+        }
+      }
+    },
+    "head": {
+      "readDeltaDeg": {
+        "rx": 90,
+        "ry": 0,
+        "rz": 80
+      },
+      "readUnreal": {
+        "frotator": {
+          "rx": 90,
+          "ry": 0,
+          "rz": 80
+        },
+        "fvector": {
+          "x": -1.138,
+          "y": 0.087,
+          "z": 59.673
+        }
+      }
+    },
+    "sL": {
+      "readDeltaDeg": {
+        "rx": -159.1240681406016,
+        "ry": -5.976903296401122,
+        "rz": -3.664481014725305
+      },
+      "readUnreal": {
+        "frotator": {
+          "rx": -120.969,
+          "ry": 1.241,
+          "rz": -9.302
+        },
+        "fvector": {
+          "x": 0.91,
+          "y": 7.439,
+          "z": 54.669
+        }
+      }
+    },
+    "fL": {
+      "readDeltaDeg": {
+        "rx": -121.76758599461215,
+        "ry": -13.3325201794844,
+        "rz": -17.1396388298803
+      },
+      "readUnreal": {
+        "frotator": {
+          "rx": -119.992,
+          "ry": -12.809,
+          "rz": -0.717
+        },
+        "fvector": {
+          "x": 1.843,
+          "y": 12.08,
+          "z": 46.788
+        }
+      }
+    },
+    "hL": {
+      "readDeltaDeg": {
+        "rx": -119.4078749220309,
+        "ry": -11.464573693166752,
+        "rz": -3.6514295192780355
+      },
+      "readUnreal": {
+        "frotator": {
+          "rx": -113.423,
+          "ry": -14.33,
+          "rz": -3.249
+        },
+        "fvector": {
+          "x": 0.193,
+          "y": 16.543,
+          "z": 39.283
+        }
+      }
+    },
+    "sR": {
+      "readDeltaDeg": {
+        "rx": -159.2553252722364,
+        "ry": 5.712241298086882,
+        "rz": 162.32442749158673
+      },
+      "readUnreal": {
+        "frotator": {
+          "rx": -120.921,
+          "ry": -2.91,
+          "rz": 169.085
+        },
+        "fvector": {
+          "x": -1.671,
+          "y": -7.532,
+          "z": 54.669
+        }
+      }
+    },
+    "fR": {
+      "readDeltaDeg": {
+        "rx": -121.51056555029012,
+        "ry": 11.91560965276706,
+        "rz": 177.15515564644352
+      },
+      "readUnreal": {
+        "frotator": {
+          "rx": -120.023,
+          "ry": 11.467,
+          "rz": 160.377
+        },
+        "fvector": {
+          "x": -2.172,
+          "y": -12.249,
+          "z": 46.788
+        }
+      }
+    },
+    "hR": {
+      "readDeltaDeg": {
+        "rx": -119.40532478607109,
+        "ry": 9.220057828637385,
+        "rz": 163.07954942658498
+      },
+      "readUnreal": {
+        "frotator": {
+          "rx": -109.363,
+          "ry": 12.217,
+          "rz": 163.355
+        },
+        "fvector": {
+          "x": -5.092,
+          "y": -15.906,
+          "z": 39.283
+        }
+      }
+    },
+    "tL": {
+      "readDeltaDeg": {
+        "rx": -96.74879030299196,
+        "ry": -3.1570000002083116,
+        "rz": 77.02393077824632
+      },
+      "readUnreal": {
+        "frotator": {
+          "rx": -93.377,
+          "ry": -3.157,
+          "rz": -99.814
+        },
+        "fvector": {
+          "x": -2.046,
+          "y": 3.825,
+          "z": 37.271
+        }
+      }
+    },
+    "knL": {
+      "readDeltaDeg": {
+        "rx": -93.3740109243154,
+        "ry": -1.4041975165061422,
+        "rz": -98.08560731515983
+      },
+      "readUnreal": {
+        "frotator": {
+          "rx": -95.936,
+          "ry": -1.322,
+          "rz": -99.922
+        },
+        "fvector": {
+          "x": -0.939,
+          "y": 4.55,
+          "z": 20.904
+        }
+      }
+    },
+    "ftL": {
+      "readDeltaDeg": {
+        "rx": -95.9083580840849,
+        "ry": -0.6940810776828221,
+        "rz": -102.69099432000148
+      },
+      "readUnreal": {
+        "frotator": {
+          "rx": -37.363,
+          "ry": -1.476,
+          "rz": -101.413
+        },
+        "fvector": {
+          "x": 0.642,
+          "y": 4.621,
+          "z": 6.047
+        }
+      }
+    },
+    "tR": {
+      "readDeltaDeg": {
+        "rx": -97.498744243416,
+        "ry": 3.1540000000223465,
+        "rz": -277.0462151313779
+      },
+      "readUnreal": {
+        "frotator": {
+          "rx": -93.752,
+          "ry": 3.154,
+          "rz": -100.207
+        },
+        "fvector": {
+          "x": -3.257,
+          "y": -3.117,
+          "z": 37.271
+        }
+      }
+    },
+    "knR": {
+      "readDeltaDeg": {
+        "rx": -93.7484090432243,
+        "ry": 1.3684027424530782,
+        "rz": -101.92260520686379
+      },
+      "readUnreal": {
+        "frotator": {
+          "rx": -95.196,
+          "ry": 1.322,
+          "rz": -100.087
+        },
+        "fvector": {
+          "x": -2.359,
+          "y": -4.195,
+          "z": 20.904
+        }
+      }
+    },
+    "ftR": {
+      "readDeltaDeg": {
+        "rx": -95.16813801365126,
+        "ry": 0.6429622527342982,
+        "rz": -97.27677045123974
+      },
+      "readUnreal": {
+        "frotator": {
+          "rx": -37.527,
+          "ry": 1.46,
+          "rz": -98.566
+        },
+        "fvector": {
+          "x": -1.089,
+          "y": -4.769,
+          "z": 6.047
+        }
+      }
+    }
+  },
+  "fileReference": {
+    "hip": {
+      "frotator": {
+        "pitch": 90,
+        "yaw": 0,
+        "roll": 80
+      },
+      "fvector": {
+        "x": -2.681,
+        "y": 0.359
+      }
+    },
+    "chest": {
+      "frotator": {
+        "pitch": 82.718,
+        "yaw": 0,
+        "roll": 80
+      },
+      "fvector": {
+        "x": -1.07,
+        "y": 0.075
+      }
+    },
+    "head": {
+      "frotator": {
+        "pitch": 90,
+        "yaw": 0,
+        "roll": 80
+      },
+      "fvector": {
+        "x": -1.138,
+        "y": 0.087
+      }
+    },
+    "sL": {
+      "frotator": {
+        "pitch": -120.969,
+        "yaw": 1.241,
+        "roll": -9.302
+      },
+      "fvector": {
+        "x": 0.91,
+        "y": 7.439
+      }
+    },
+    "fL": {
+      "frotator": {
+        "pitch": -119.992,
+        "yaw": -12.809,
+        "roll": -0.717
+      },
+      "fvector": {
+        "x": 1.843,
+        "y": 12.08
+      }
+    },
+    "hL": {
+      "frotator": {
+        "pitch": -113.423,
+        "yaw": -14.33,
+        "roll": -3.249
+      },
+      "fvector": {
+        "x": 0.193,
+        "y": 16.543
+      }
+    },
+    "sR": {
+      "frotator": {
+        "pitch": -120.921,
+        "yaw": -2.91,
+        "roll": 169.085
+      },
+      "fvector": {
+        "x": -1.671,
+        "y": -7.532
+      }
+    },
+    "fR": {
+      "frotator": {
+        "pitch": -120.023,
+        "yaw": 11.467,
+        "roll": 160.377
+      },
+      "fvector": {
+        "x": -2.172,
+        "y": -12.249
+      }
+    },
+    "hR": {
+      "frotator": {
+        "pitch": -109.363,
+        "yaw": 12.217,
+        "roll": 163.355
+      },
+      "fvector": {
+        "x": -5.092,
+        "y": -15.906
+      }
+    },
+    "tL": {
+      "frotator": {
+        "pitch": -93.377,
+        "yaw": -3.157,
+        "roll": -99.814
+      },
+      "fvector": {
+        "x": -2.046,
+        "y": 3.825
+      }
+    },
+    "knL": {
+      "frotator": {
+        "pitch": -95.936,
+        "yaw": -1.322,
+        "roll": -99.922
+      },
+      "fvector": {
+        "x": -0.939,
+        "y": 4.55
+      }
+    },
+    "ftL": {
+      "frotator": {
+        "pitch": -37.363,
+        "yaw": -1.476,
+        "roll": -101.413
+      },
+      "fvector": {
+        "x": 0.642,
+        "y": 4.621
+      }
+    },
+    "tR": {
+      "frotator": {
+        "pitch": -93.752,
+        "yaw": 3.154,
+        "roll": -100.207
+      },
+      "fvector": {
+        "x": -3.257,
+        "y": -3.117
+      }
+    },
+    "knR": {
+      "frotator": {
+        "pitch": -95.196,
+        "yaw": 1.322,
+        "roll": -100.087
+      },
+      "fvector": {
+        "x": -2.359,
+        "y": -4.195
+      }
+    },
+    "ftR": {
+      "frotator": {
+        "pitch": -37.527,
+        "yaw": 1.46,
+        "roll": -98.566
+      },
+      "fvector": {
+        "x": -1.089,
+        "y": -4.769
+      }
+    }
+  }
+}

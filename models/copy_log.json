@@ -1,0 +1,11 @@
+{
+  "copied": {
+    "BEST_MODEL_IMU.pt": "cuadernillos\\checkpoints\\imu_tcn_autoencoder\\fine_tuned\\model_finetuned.pt",
+    "BEST_MODEL_IMU_BASE.pt": "cuadernillos\\checkpoints\\imu_tcn_autoencoder\\base\\model.pt",
+    "BEST_MODEL_FUSION.pt": "cuadernillos\\checkpoints\\fusion_mlp\\fine_tuned\\model_finetuned.pt",
+    "BEST_MODEL_EMG.pt": "cuadernillos\\checkpoints\\emg_tcn\\fine_tuned\\model_finetuned.pt",
+    "BEST_MODEL_ECG.pt": "cuadernillos\\checkpoints\\ecg_gru\\fine_tuned\\model_finetuned.pt",
+    "BEST_MODEL_KALMAN.pt": "cuadernillos\\checkpoints\\kalman_filter\\kalman_best.pt"
+  },
+  "destination": "C:\\ECOSISTEMA\\USFX\\SIS-330\\BEST_MODELS"
+}

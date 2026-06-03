@@ -1,0 +1,17 @@
+{
+  "val_score_pct": 85.03860198582059,
+  "test_score_pct": 84.86844351181693,
+  "val_accuracy": 0.98,
+  "test_accuracy": 1.0,
+  "test_f1_macro": 1.0,
+  "best_epoch": 3,
+  "target_band": [
+    86.0,
+    89.0
+  ],
+  "final_loss_gap": -0.02656413379468414,
+  "final_acc_gap": 0.020000000000000018,
+  "overfitting_risk": false,
+  "underfitting_risk": false,
+  "training_healthy": true
+}

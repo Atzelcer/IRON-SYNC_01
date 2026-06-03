@@ -1,0 +1,12 @@
+{
+  "schema": "ironsync.imus_ven.ppo.inference.v1",
+  "modelo": "BEST_PPO.pt",
+  "generado_en": "2026-05-28T16:49:49.945885+00:00",
+  "ventanas_eval": 480,
+  "particion": "val",
+  "inferencia_global_pct": 79.1,
+  "fidelidad_pose_pct": 79.4,
+  "suavidad_trayectoria_pct": 78.6,
+  "poses_sin_colision_pct": 79.3,
+  "nota": "Modelo seleccionado por mejor inferencia_global en validacion (no 100% — limite TCN+corrupcion)."
+}

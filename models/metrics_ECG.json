@@ -1,0 +1,8 @@
+{
+  "accuracy": 0.5955882352941176,
+  "precision": 0.5719063545150501,
+  "recall": 0.5948470209339775,
+  "f1": 0.5714867292332081,
+  "n_train": 629,
+  "note": "Entrenado sobre dataset/ECG (CALMA,TENSION,ESTRES)"
+}

@@ -1,0 +1,85 @@
+# =============================================================================
+# CONFIGURACION DE HIPERPARAMETROS — Agente PPO IMU (IRON-SYNC)
+# =============================================================================
+
+esquema: ironsync.imus_ven.ppo.v1
+semilla: 42
+
+# --- Rutas (modelos, datos, salidas) ---
+rutas:
+  modelo_tcn: ../TCN/models/tcn_sanitizer_best.pt
+  archivo_actor: ./models/BEST_PPO.pt      # mejor modelo exportado
+  datasets_laboratorio: ../../artifacts/IRON_SYNC_TRAINING_DATASETS
+  salida_modelos: ./models
+  carpeta_reportes: ./reports
+
+# --- Datos de entrenamiento (ventanas post-TCN) ---
+datos:
+  particion: train          # train | val | test
+  max_ventanas: 2000        # null = usar todas las ventanas del NPZ
+  lote_sanitizado_tcn: 64   # batch al pasar por TCN
+
+# --- Visualizacion en biomech-lab (skeletal mesh en tiempo real) ---
+visualizacion_laboratorio:
+  activo: true                # escribe ppo_live_state.json -> relay -> mesh 3D
+  cada_n_pasos: 1             # 1 = cada paso del env 0; sube si va lento
+
+# --- Entorno simple (1 rollout, pruebas unitarias) ---
+entorno:
+  escala_accion_grados: 2.0   # delta max por eje tras politica
+  fps: 50
+
+# --- Entorno multiple (NUM_ENVS, usado en entrenamiento) ---
+entorno_multiple:
+  num_entornos: 8
+
+# --- Corrupcion de sensores (por worker en entorno multiple) ---
+corrupcion_sensores:
+  ruido_grados_min_max: [0.0, 1.5]
+  deriva_min_max: [0.0, 0.08]
+  jitter_grados_min_max: [0.0, 0.6]
+  tasa_sensor_perdido_min_max: [0.0, 0.15]
+  tasa_sensor_congelado_min_max: [0.0, 0.1]
+  perfiles_biomecanicos:
+    - neutral
+    - rest
+    - walk
+    - gesture
+    - sport
+
+# --- Entrenamiento PPO (Actor-Critic) ---
+entrenamiento:
+  pasos_totales: 120_000
+  pasos_por_rollout: 128
+  epocas_por_actualizacion: 6
+  tamano_lote: 256
+  gamma: 0.99
+  gae_lambda: 0.95
+  clip_rango: 0.2
+  coeficiente_entropia: 0.01
+  coeficiente_valor: 0.5
+  norma_gradiente_max: 0.5
+  tasa_aprendizaje: 0.0003
+  neuronas_ocultas: 256
+  guardar_cada_rollouts: 5
+
+# --- Politica (red en politica_actor_critico.py) ---
+politica:
+  tipo: actor_critico
+  accion: delta_rx_ry_rz_por_sensor   # 45 valores continuos [-1,1] -> grados
+  observacion: tcn_san_vel_acc_mask_prev
+  nota: El TCN esta congelado; solo entrena la correccion PPO.
+
+# --- Recompensas y castigos (logica en recompensas_castigos.py) ---
+recompensas:
+  peso_suavidad: 0.8        # castigo por jitter entre frames
+  peso_fidelidad: 3.0       # castigo por alejarse del clean (target)
+  peso_reposo: 4.0          # castigo movimiento en regimen quieto
+  peso_limite_articular: 2.5
+  peso_velocidad: 1.5       # velocidad angular excesiva (boneLimits)
+  peso_padre_hijo: 1.2      # incoherencia padre-hijo
+  peso_colision: 4.0        # mano/torso, piernas, cabeza (colisiones_huesos.py)
+  peso_spike: 5.0           # salto brusco > 15 grados en un frame
+  peso_sobre_suavizado: 2.0 # gesto plano vs target con variacion
+  bonus_sin_colision: 2.0
+  bonus_pose_valida: 3.0    # sin colision ni limites rotos

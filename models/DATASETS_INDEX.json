@@ -1,0 +1,35 @@
+{
+  "IMU": {
+    "raw_csv": "dataset/IMU/csv/",
+    "processed_synthetic": [
+      "dataset/IMU/processed/train.npz",
+      "dataset/IMU/processed/val.npz",
+      "dataset/IMU/processed/test.npz"
+    ],
+    "processed_real": [
+      "dataset/IMU/processed/real_train.npz",
+      "dataset/IMU/processed/real_val.npz",
+      "dataset/IMU/processed/real_test.npz"
+    ],
+    "metadata": [
+      "dataset/IMU/metadata/dataset_info.json",
+      "dataset/IMU/metadata/real_sensors_info.json"
+    ]
+  },
+  "EMG": {
+    "classes": ["BAJA", "MEDIA", "ALTA"],
+    "root": "dataset/EMG/"
+  },
+  "ECG": {
+    "classes": ["CALMA", "TENSION", "ESTRES"],
+    "root": "dataset/ECG/"
+  },
+  "FUSION": {
+    "processed": [
+      "dataset/FUSION/processed/fusion_train.npz",
+      "dataset/FUSION/processed/fusion_val.npz",
+      "dataset/FUSION/processed/fusion_test.npz"
+    ],
+    "metadata": "dataset/FUSION/metadata/fusion_dataset_info.json"
+  }
+}

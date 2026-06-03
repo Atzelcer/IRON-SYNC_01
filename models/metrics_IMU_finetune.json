@@ -1,0 +1,19 @@
+{
+  "val_score_pct": 87.51195819626692,
+  "test_score_base_pct": 83.06740708697556,
+  "test_score_finetuned_pct": 87.4373962420243,
+  "improvement_pct": 4.369989155048742,
+  "mse_base": 0.0660826787352562,
+  "mse_finetuned": 0.021608194336295128,
+  "mae_finetuned": 0.10812120139598846,
+  "best_epoch": 24,
+  "target_band": [
+    86.0,
+    89.0
+  ],
+  "freeze_notes": [
+    "encoder_in + primeros TCN blocks congelados",
+    "decoder y \u00faltimos blocks entrenables"
+  ],
+  "data_source": "real_sensors"
+}

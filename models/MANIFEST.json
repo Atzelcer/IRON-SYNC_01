@@ -1,0 +1,127 @@
+{
+  "project": "IRON-SYNC / SIS-330",
+  "description": "Modelos centralizados para el laboratorio IRON-SYNC; placeholders marcados cuando aun no hay checkpoint real.",
+  "models": {
+    "BEST_MODEL_IMU.pt": {
+      "source": "cuadernillos/checkpoints/imu_tcn_autoencoder/fine_tuned/model_finetuned.pt",
+      "model": "Masked TCN Autoencoder (1)",
+      "test_score_pct": 87.44
+    },
+    "BEST_MODEL_IMU_BASE.pt": {
+      "source": "cuadernillos/checkpoints/imu_tcn_autoencoder/base/model.pt",
+      "model": "Masked TCN Autoencoder base",
+      "test_score_pct": 87.43
+    },
+    "BEST_MODEL_EMG.pt": {
+      "source": "cuadernillos/checkpoints/emg_tcn/fine_tuned/model_finetuned.pt",
+      "model": "TCN EMG (2)",
+      "test_accuracy": 0.993,
+      "labels": [
+        "LOW",
+        "MID",
+        "HIGH"
+      ]
+    },
+    "BEST_MODEL_ECG.pt": {
+      "source": "cuadernillos/checkpoints/ecg_gru/fine_tuned/model_finetuned.pt",
+      "model": "GRU ECG (3)",
+      "test_accuracy": 0.596,
+      "labels": [
+        "CALM",
+        "STRESS",
+        "FOCUS"
+      ]
+    },
+    "BEST_MODEL_FUSION.pt": {
+      "source": "cuadernillos/checkpoints/fusion_mlp/fine_tuned/model_finetuned.pt",
+      "model": "MLP Fusion (4)",
+      "test_score_pct": 84.87,
+      "actions": [
+        "WALK",
+        "RUN",
+        "FLY"
+      ]
+    },
+    "BEST_MODEL_KALMAN.pt": {
+      "source": "cuadernillos/checkpoints/kalman_filter/kalman_best.pt",
+      "model": "BiomechanicalKalman (5)",
+      "dim": 3
+    },
+    "BEST_MODEL_TCN_SANITIZER.pt": {
+      "model": "TCN Sanitizer IMU real copy",
+      "bytes": 231109,
+      "updated_at": "2026-06-03T10:25:17Z",
+      "kind": "real_copy",
+      "source": "IA-IRON-SYNC/TCN/models/tcn_sanitizer_best.pt"
+    },
+    "BEST_MODEL_PPO.pt": {
+      "model": "PPO Actor-Critic real copy",
+      "bytes": 517592,
+      "updated_at": "2026-06-03T10:25:17Z",
+      "kind": "real_copy",
+      "source": "IA-IRON-SYNC/PPO/models/BEST_PPO.pt"
+    },
+    "BEST_MODEL_ORQUESTADOR_13.pt": {
+      "model": "MLP Attention Orquestador 13 acciones",
+      "bytes": 393216,
+      "updated_at": "2026-06-03T10:25:17Z",
+      "kind": "synthetic_placeholder",
+      "synthetic_placeholder": true,
+      "warning": "Reemplazar por checkpoint entrenado real cuando exista.",
+      "tags": [
+        "IDLE",
+        "WALK",
+        "RUN",
+        "JUMP",
+        "CROUCH",
+        "PUNCH_RIGHT",
+        "PUNCH_LEFT",
+        "KICK_RIGHT",
+        "KICK_LEFT",
+        "BLOCK",
+        "WAVE",
+        "SHOOT",
+        "FLY"
+      ]
+    },
+    "BEST_MODEL_DRL_QLEARNING.json": {
+      "model": "Q-learning policy registry",
+      "bytes": 105580,
+      "updated_at": "2026-06-03T10:25:17Z",
+      "kind": "synthetic_placeholder",
+      "synthetic_placeholder": true,
+      "warning": "Reemplazar por checkpoint entrenado real cuando exista.",
+      "tags": [
+        "manual_policy",
+        "q_table",
+        "reward_trace"
+      ]
+    },
+    "BEST_MODEL_DRL_NEURAL_Q.pt": {
+      "model": "Neural Q policy placeholder",
+      "bytes": 262144,
+      "updated_at": "2026-06-03T10:25:17Z",
+      "kind": "synthetic_placeholder",
+      "synthetic_placeholder": true,
+      "warning": "Reemplazar por checkpoint entrenado real cuando exista.",
+      "tags": [
+        "state_encoder",
+        "q_head",
+        "movement_policy"
+      ]
+    },
+    "BEST_MODEL_MOTION_PREDICTOR.pt": {
+      "model": "Motion predictor / reconstruction placeholder",
+      "bytes": 196608,
+      "updated_at": "2026-06-03T10:25:17Z",
+      "kind": "synthetic_placeholder",
+      "synthetic_placeholder": true,
+      "warning": "Reemplazar por checkpoint entrenado real cuando exista.",
+      "tags": [
+        "sequence_window",
+        "pose_delta",
+        "confidence_head"
+      ]
+    }
+  }
+}
