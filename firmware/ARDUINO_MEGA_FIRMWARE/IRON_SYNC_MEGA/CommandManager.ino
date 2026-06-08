@@ -375,13 +375,11 @@ void processCommand(const char* rawCmd) {
     return;
   }
 
-  if (strcmp(cmd, "LED_WHITE") == 0) setLedWhite();
-  if (strcmp(cmd, "LED_BLUE") == 0) setLedBlue();
-  if (strcmp(cmd, "LED_AQUA") == 0) setLedAqua();
-  if (strcmp(cmd, "LED_RED") == 0) setLedRed();
-  if (strcmp(cmd, "LED_GREEN") == 0) setLedGreen();
-  if (strcmp(cmd, "LED_YELLOW") == 0) setLedYellow();
-  if (strcmp(cmd, "LED_PURPLE") == 0) setLedPurple();
+  if (strncmp(cmd, "LED_", 4) == 0 || strncmp(cmd, "BUZZ_", 5) == 0) {
+    replyCommand("DISABLED,MEGA_ONLY_IMU_STREAM");
+    return;
+  }
+
   if (strcmp(cmd, "MASTER_CAL_PROCESSING") == 0) {
     startMasterCalibrationVisual();
     replyCommand("MASTER_CAL_PROCESSING_OK");
@@ -399,6 +397,5 @@ void processCommand(const char* rawCmd) {
     replyCommand("MASTER_CAL_FAIL_DONE");
     return;
   }
-  if (strcmp(cmd, "BUZZ_OK") == 0) buzzerOk();
-  if (strcmp(cmd, "BUZZ_FAIL") == 0) buzzerFail();
+  replyCommand("ERR,UNKNOWN_COMMAND");
 }

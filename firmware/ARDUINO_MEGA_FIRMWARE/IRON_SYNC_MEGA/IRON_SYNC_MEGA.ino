@@ -1,5 +1,4 @@
 #include <Wire.h>
-#include <Adafruit_NeoPixel.h>
 #include <math.h>
 #include "IronSyncConfig.h"
 #include "IronSyncTypes.h"
@@ -28,28 +27,18 @@ void setup() {
   Serial1.begin(ESP32_BAUD);
 
   initLedBuzzer();
-  maintainLedBase();
 
   Wire.begin();
   Wire.setClock(I2C_CLOCK);
   Wire.setWireTimeout(6000, true);
-  maintainLedBase();
 
   initCorrectionProfiles();
-  maintainLedBase();
-
-  initBio();
-  maintainLedBase();
 
   initImuSystemNoCalibration();
-  maintainLedBase();
-  setLedWhite();
 
   Serial.println("IRON_SYNC_MEGA_READY_DEBUG");
-  Serial.println("LED_STANDBY_WHITE");
   Serial1.println("MEGA_READY");
   Serial1.println("MEGA_WAITING_HARDWARE_CONNECTION");
-  Serial1.println("LED_STANDBY_WHITE");
 }
 
 void loop() {
@@ -61,12 +50,10 @@ void loop() {
   if (systemRunning && calibrationDone && now - lastSendTime >= SEND_INTERVAL_MS) {
     lastSendTime = now;
 
-    readBio();
     readAllImus();
     sendCompactPacket();
   }
 
-  maintainLedBase();
   handleCommands();
   tryRecoverMissingSensors();
 

@@ -203,10 +203,6 @@ int getYawRateOut(uint8_t idx);
 void printRuntimeStats();
 void resetRuntimeStats();
 
-void initBio();
-void readBio();
-void calibrateEMG();
-
 void initLedBuzzer();
 void setLedWhite();
 void setLedBlue();
@@ -248,12 +244,5 @@ void showChestDisconnectHold();
 void megaResetAfterDisconnect();
 
 void sendCompactPacket();
-
-extern int ecgRaw;
-extern int emgRaw;
-extern int emgIntensity;
-extern int emgBaseline;
-extern int ecgLoPlus;
-extern int ecgLoMinus;
 
 #endif

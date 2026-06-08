@@ -12,17 +12,12 @@
 #define RST_SUPERIOR 7
 #define RST_INFERIOR 8
 
-#define ECG_PIN A0
-#define EMG_PIN A1
-#define ECG_LO_PLUS 22
-#define ECG_LO_MINUS 23
-
 #define LED_PIN 5
-#define NUM_LEDS 60
-#define LED_BRIGHTNESS 255
+#define NUM_LEDS 0
+#define LED_BRIGHTNESS 0
 /** LED rojo discreto en pecho (misma señal que tira). 0 = solo tira NeoPixel. */
 #define CHEST_AUX_RED_PIN 0
-#define UI_DISCONNECT_RED_HOLD_MS 320
+#define UI_DISCONNECT_RED_HOLD_MS 0
 
 #define BUZZER_CAL 9
 #define BUZZER_STATE 10
@@ -48,11 +43,10 @@
 #define FULL_SENSOR_CALIBRATION_COUNT SENSOR_COUNT
 
 /**
- * Modo coherente con el pipeline completo:
- * Mega calibra orientacion/base actual y transmite datos continuos.
- * El laboratorio/Python/MLP decide las acciones y Unreal consume la salida final.
+ * Mega calibra orientacion/base actual y transmite solo datos IMU continuos.
+ * La salida es rx/ry/rz corregida y suavizada para los 15 sensores.
  */
-#define RAW_ORIENTATION_STREAM 1
+#define RAW_ORIENTATION_STREAM 0
 
 // ================= FUSION / FILTER =================
 #define COMPLEMENTARY_ALPHA 0.982

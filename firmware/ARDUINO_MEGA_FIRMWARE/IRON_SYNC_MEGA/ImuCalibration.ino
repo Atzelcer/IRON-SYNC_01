@@ -1111,7 +1111,6 @@ void calibrateAllIMUs() {
   resetTCAs();
   scanAndConfigureSensors();
   emitCalibrationProgress(65);
-  calibrateEMG();
   emitCalibrationProgress(78);
 
   uint8_t okCount = 0;

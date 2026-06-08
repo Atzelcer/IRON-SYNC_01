@@ -16,15 +16,15 @@ void printCompactPacket(
   out.print(",");
   out.print(activeSensors);
   out.print(",");
-  out.print(ecgRaw);
+  out.print(0);
   out.print(",");
-  out.print(emgRaw);
+  out.print(0);
   out.print(",");
-  out.print(emgIntensity);
+  out.print(0);
   out.print(",");
-  out.print(ecgLoPlus);
+  out.print(0);
   out.print(",");
-  out.print(ecgLoMinus);
+  out.print(0);
 
   for (uint8_t i = 0; i < SENSOR_COUNT; i++) {
     if (!shouldStreamSensor(i)) continue;
@@ -66,30 +66,6 @@ void printCompactPacket(
   out.println();
 }
 
-void printBioPackets(Stream &out, uint16_t frame, unsigned long ms) {
-  out.print("ECG,");
-  out.print(frame);
-  out.print(",");
-  out.print(ms);
-  out.print(",");
-  out.print(ecgRaw);
-  out.print(",");
-  out.print(ecgLoPlus);
-  out.print(",");
-  out.println(ecgLoMinus);
-
-  out.print("EMG,");
-  out.print(frame);
-  out.print(",");
-  out.print(ms);
-  out.print(",");
-  out.print(emgRaw);
-  out.print(",");
-  out.print(emgIntensity);
-  out.print(",");
-  out.println(emgBaseline);
-}
-
 void sendCompactPacket() {
   frameId++;
   packetCounter++;
@@ -100,12 +76,10 @@ void sendCompactPacket() {
 
 #if STREAM_PACKET_SERIAL1
   printCompactPacket(Serial1, frameId, ms, mask, activeSensors);
-  printBioPackets(Serial1, frameId, ms);
 #endif
 
 #if STREAM_PACKET_USB
   printCompactPacket(Serial, frameId, ms, mask, activeSensors);
-  printBioPackets(Serial, frameId, ms);
 #endif
 
   static uint8_t debugCounter = 0;
@@ -120,12 +94,7 @@ void sendCompactPacket() {
     Serial.print(mask);
     Serial.print(",A=");
     Serial.print(activeSensors);
-    Serial.print(",ECG=");
-    Serial.print(ecgRaw);
-    Serial.print(",EMG=");
-    Serial.print(emgRaw);
-    Serial.print(",INT=");
-    Serial.println(emgIntensity);
+    Serial.println();
   }
 
   static uint8_t qualityCounter = 0;
